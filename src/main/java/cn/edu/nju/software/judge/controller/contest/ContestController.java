@@ -1,7 +1,6 @@
-package cn.edu.nju.software.judge.config;
+package cn.edu.nju.software.judge.controller.contest;
 
-import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * ////////////////////////////////////////////////////////////////////
@@ -27,9 +26,6 @@ import org.springframework.context.annotation.Configuration;
  * //            佛祖保佑       永不宕机     永无BUG                    //
  * ////////////////////////////////////////////////////////////////////
  */
-@Configuration
-@MapperScan("cn.edu.nju.software.judge.dao")
-public class MybatisConfig {
-
-
+@RestController
+public class ContestController {
 }

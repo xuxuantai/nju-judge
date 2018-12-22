@@ -1,7 +1,4 @@
-package cn.edu.nju.software.judge.config;
-
-import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.context.annotation.Configuration;
+package cn.edu.nju.software.judge.vo;
 
 /**
  * ////////////////////////////////////////////////////////////////////
@@ -27,9 +24,5 @@ import org.springframework.context.annotation.Configuration;
  * //            佛祖保佑       永不宕机     永无BUG                    //
  * ////////////////////////////////////////////////////////////////////
  */
-@Configuration
-@MapperScan("cn.edu.nju.software.judge.dao")
-public class MybatisConfig {
-
-
+public class UserVO {
 }

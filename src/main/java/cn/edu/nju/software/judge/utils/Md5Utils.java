@@ -1,7 +1,6 @@
-package cn.edu.nju.software.judge.config;
+package cn.edu.nju.software.judge.utils;
 
-import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.context.annotation.Configuration;
+import org.apache.commons.codec.digest.DigestUtils;
 
 /**
  * ////////////////////////////////////////////////////////////////////
@@ -27,9 +26,18 @@ import org.springframework.context.annotation.Configuration;
  * //            佛祖保佑       永不宕机     永无BUG                    //
  * ////////////////////////////////////////////////////////////////////
  */
-@Configuration
-@MapperScan("cn.edu.nju.software.judge.dao")
-public class MybatisConfig {
+public class Md5Utils {
 
+    private Md5Utils(){}
 
+    /**
+     *
+     *
+     * 加密
+     * @param str 原文
+     * @return
+     */
+    public String encrypt(String str){
+        return DigestUtils.md5Hex(DigestUtils.md5Hex(str));
+    }
 }

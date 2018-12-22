@@ -1,7 +1,8 @@
-package cn.edu.nju.software.judge.config;
+package cn.edu.nju.software.judge.service.contest.impl;
 
-import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.context.annotation.Configuration;
+import cn.edu.nju.software.judge.service.contest.ContestService;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * ////////////////////////////////////////////////////////////////////
@@ -27,9 +28,7 @@ import org.springframework.context.annotation.Configuration;
  * //            佛祖保佑       永不宕机     永无BUG                    //
  * ////////////////////////////////////////////////////////////////////
  */
-@Configuration
-@MapperScan("cn.edu.nju.software.judge.dao")
-public class MybatisConfig {
-
-
+@Service
+@Transactional
+public class ContestServiceImpl implements ContestService {
 }
