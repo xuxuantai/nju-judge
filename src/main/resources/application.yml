@@ -1,0 +1,18 @@
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: cn.edu.nju.software.judge.beans
+server:
+  port: 9000
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/judge?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password:
+##分页配置
+pagehelper:
+  helper-dialect: mysql
+  offset-as-page-num: true
+  row-bounds-with-count: true
+  reasonable: true
+  page-size-zero: true
