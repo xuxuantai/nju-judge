@@ -37,7 +37,7 @@ public class Md5Utils {
      * @param str 原文
      * @return
      */
-    public String encrypt(String str){
+    public static String encrypt(String str){
         return DigestUtils.md5Hex(DigestUtils.md5Hex(str));
     }
 }
